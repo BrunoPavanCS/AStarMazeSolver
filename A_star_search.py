@@ -62,9 +62,10 @@ def a_star_search(_maze):
     final_path = {}
 
     analyzed_cell = destination
+    print("Number of analyzed cells:", len(path.keys()))
 
     while analyzed_cell != initial_cell:
-        
+
         final_path[path[analyzed_cell]] = analyzed_cell
         analyzed_cell = path[analyzed_cell]
 
